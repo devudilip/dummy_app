@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  year: MyString
+  sales: 1
+  expenses: 1
+
+two:
+  year: MyString
+  sales: 1
+  expenses: 1

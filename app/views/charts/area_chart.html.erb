@@ -1,0 +1,38 @@
+<div id='chart1'>  </div>
+<%= render_chart @chart, 'chart1' %>
+
+<div id='chart2'>  </div>
+  <%= render_chart @chart2, 'chart2' %>
+
+
+
+
+ 
+
+
+
+
+
+<div id="chartright">
+<h1>Listing charts</h1>
+<table border="1px">
+  <tr>
+    <th>Year</th>
+    <th>Sales</th>
+    <th>Expenses</th>
+    
+  </tr>
+
+<% @charts.each do |chart| %>
+  <tr>
+    <td><%= chart.year %></td>
+    <td><%= chart.sales %></td>
+    <td><%= chart.expenses %></td>
+   
+    <td><%= link_to 'Edit', edit_chart_path(chart) %></td>
+    <td><%= link_to 'Destroy', chart, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+ <%= link_to 'New Chart', new_chart_path %>
+</div>

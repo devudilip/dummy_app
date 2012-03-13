@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Year:</b>
+  <%= @chart.year %>
+</p>
+
+<p>
+  <b>Sales:</b>
+  <%= @chart.sales %>
+</p>
+
+<p>
+  <b>Expenses:</b>
+  <%= @chart.expenses %>
+</p>
+
+
+<%= link_to 'Edit', edit_chart_path(@chart) %> |
+<%= link_to 'Back', :controller => "charts", :action => "area_chart" %>
