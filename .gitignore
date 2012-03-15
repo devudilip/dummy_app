@@ -1,4 +1,11 @@
-.bundle
+config/database.yml
+db/schema.rb
+*~
+*.cache
+*.log
+*.pid
+tmp/**/*
+.DS\_Store
 db/*.sqlite3
-log/*.log
-tmp/
+*.tmproj
+Capfile
