@@ -8,8 +8,7 @@ gem 'rails', '3.0.5'
 gem 'mysql2','0.2.7'
 gem "google_visualr", "~> 2.1.0"
 gem "capistrano"
-
-
+gem "heroku"
 # Use unicorn as the web server
 # gem 'unicorn'
 

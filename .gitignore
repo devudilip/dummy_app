@@ -1,5 +1,5 @@
-config/database.yml
-db/schema.rb
+#config/database.yml
+#db/schema.rb
 *~
 *.cache
 *.log
