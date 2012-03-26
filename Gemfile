@@ -1,14 +1,16 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.5'
-
-# Bundle edge Rails instead:
+#gem 'rake', '0.8.7'
+## Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 #gem 'mysql2','0.2.7'
 gem "google_visualr", "~> 2.1.0"
 gem "capistrano"
 gem "heroku"
+gem 'hassle'
+gem 'sass'
 # Use unicorn as the web server
 # gem 'unicorn'
 

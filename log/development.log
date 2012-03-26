@@ -7908,3 +7908,57 @@ Started GET "/charts/area_chart" for 127.0.0.1 at 2012-03-22 15:33:10 +0530
   [1m[36mChart Load (0.2ms)[0m  [1mSELECT `charts`.* FROM `charts`[0m
 Rendered charts/area_chart.html.erb within layouts/application (10.5ms)
 Completed 200 OK in 60ms (Views: 39.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-26 12:16:54 +0530
+  Processing by ChartsController#index as HTML
+  [1m[36mChart Load (13.9ms)[0m  [1mSELECT `charts`.* FROM `charts`[0m
+Rendered charts/_year.html.erb (0.7ms)
+Rendered charts/_year.html.erb (0.3ms)
+Rendered charts/index.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 185ms (Views: 55.4ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-26 12:17:03 +0530
+  Processing by ChartsController#index as HTML
+  [1m[35mChart Load (0.2ms)[0m  SELECT `charts`.* FROM `charts`
+Rendered charts/_year.html.erb (0.5ms)
+Rendered charts/_year.html.erb (0.5ms)
+Rendered charts/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 41ms (Views: 21.1ms | ActiveRecord: 0.2ms)
+  [1m[36mSQL (47.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateCharts (20120229044221)
+Migrating to CreateGeos (20120301055514)
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mdescribe `charts`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW KEYS FROM `charts`
+  [1m[36mSQL (0.3ms)[0m  [1mdescribe `geos`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW KEYS FROM `geos`
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateCharts (20120229044221)
+Migrating to CreateGeos (20120301055514)
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mdescribe `charts`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW KEYS FROM `charts`
+  [1m[36mSQL (0.5ms)[0m  [1mdescribe `geos`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW KEYS FROM `geos`
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateCharts (20120229044221)
+Migrating to CreateGeos (20120301055514)
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mdescribe `charts`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW KEYS FROM `charts`
+  [1m[36mSQL (0.3ms)[0m  [1mdescribe `geos`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW KEYS FROM `geos`
