@@ -49,6 +49,6 @@ DummyApp::Application.configure do
 
 
   #for heroku
-  config.assets.compile = true
+#  config.assets.compile = true
 
 end

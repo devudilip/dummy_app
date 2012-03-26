@@ -7830,3 +7830,81 @@ Rendered charts/_year.html.erb (0.5ms)
 Rendered charts/_year.html.erb (0.3ms)
 Rendered charts/index.html.erb within layouts/application (25.9ms)
 Completed 200 OK in 110ms (Views: 50.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-22 14:57:08 +0530
+  Processing by ChartsController#index as HTML
+  [1m[36mChart Load (21.1ms)[0m  [1mSELECT `charts`.* FROM `charts`[0m
+Rendered charts/_year.html.erb (0.4ms)
+Rendered charts/_year.html.erb (0.6ms)
+Rendered charts/index.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 242ms (Views: 63.8ms | ActiveRecord: 21.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-22 15:20:42 +0530
+  Processing by ChartsController#index as HTML
+  [1m[35mChart Load (0.1ms)[0m  SELECT `charts`.* FROM `charts`
+Rendered charts/_year.html.erb (0.3ms)
+Rendered charts/_year.html.erb (0.3ms)
+Rendered charts/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 21ms (Views: 10.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-22 15:27:19 +0530
+  Processing by ChartsController#index as HTML
+  [1m[36mChart Load (0.3ms)[0m  [1mSELECT `charts`.* FROM `charts`[0m
+Rendered charts/_year.html.erb (0.5ms)
+Rendered charts/_year.html.erb (0.5ms)
+Rendered charts/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 144ms (Views: 21.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/?startyear=2000&endyear=2009" for 127.0.0.1 at 2012-03-22 15:31:31 +0530
+  Processing by ChartsController#index as HTML
+  Parameters: {"startyear"=>"2000", "endyear"=>"2009"}
+  [1m[35mChart Load (12.4ms)[0m  SELECT `charts`.* FROM `charts` WHERE (year >= '2000' AND year <= '2009')
+Rendered charts/_year.html.erb (0.5ms)
+Rendered charts/_year.html.erb (0.6ms)
+Rendered charts/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 60ms (Views: 21.3ms | ActiveRecord: 12.4ms)
+
+
+Started GET "/charts" for 127.0.0.1 at 2012-03-22 15:31:46 +0530
+  Processing by ChartsController#index as HTML
+  [1m[36mChart Load (0.2ms)[0m  [1mSELECT `charts`.* FROM `charts`[0m
+Rendered charts/_year.html.erb (0.6ms)
+Rendered charts/_year.html.erb (0.6ms)
+Rendered charts/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 43ms (Views: 21.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-22 15:32:21 +0530
+  Processing by ChartsController#index as HTML
+  [1m[35mChart Load (0.2ms)[0m  SELECT `charts`.* FROM `charts`
+Rendered charts/_year.html.erb (0.6ms)
+Rendered charts/_year.html.erb (0.6ms)
+Rendered charts/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 42ms (Views: 21.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/geos" for 127.0.0.1 at 2012-03-22 15:32:25 +0530
+  Processing by GeosController#index as HTML
+  [1m[36mGeo Load (0.5ms)[0m  [1mSELECT `geos`.* FROM `geos`[0m
+Rendered geos/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 79ms (Views: 38.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/charts" for 127.0.0.1 at 2012-03-22 15:32:55 +0530
+  Processing by ChartsController#index as HTML
+  [1m[35mChart Load (0.2ms)[0m  SELECT `charts`.* FROM `charts`
+Rendered charts/_year.html.erb (0.6ms)
+Rendered charts/_year.html.erb (0.5ms)
+Rendered charts/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 42ms (Views: 21.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/charts/area_chart" for 127.0.0.1 at 2012-03-22 15:33:10 +0530
+  Processing by ChartsController#area_chart as HTML
+  [1m[36mChart Load (0.2ms)[0m  [1mSELECT `charts`.* FROM `charts`[0m
+Rendered charts/area_chart.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 60ms (Views: 39.7ms | ActiveRecord: 0.2ms)
